@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<!-- Mirrored from arsredovisning.helsingborg.se/kontakta-oss/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Dec 2017 07:59:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+
+    <meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontakta oss | Årsredovisning 2016</title>
+
+    <meta name="description" content="" />
+    <meta name="pubdate" content="2016-01-13">
+    <meta name="moddate" content="2017-03-14">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="HandheldFriendly" content="true" />
+
+    <script>
+        var ajaxurl = '../wp/wp-admin/admin-ajax.html';
+    </script>
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript">
+            document.createElement('header');
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('aside');
+            document.createElement('footer');
+            document.createElement('hgroup');
+        </script>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    
+<!-- Start The Seo Framework by Sybre Waaijer -->
+<meta name="robots" content="noodp,noydir" />
+<meta name="description" content="Kontakta oss on Årsredovisning 2016 | Helsingborg kontaktcenter Telefon:  042-10 50 00 Öppettider: Måndag–torsdag 07:00 –19:00 Fredag 07:00 –17:00 Lördag&#8230;" />
+<meta property="og:image" content="" />
+<meta property="og:locale" content="sv_SE" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Kontakta oss | Årsredovisning 2016" />
+<meta property="og:description" content="Helsingborg kontaktcenter Telefon:  042-10 50 00 Öppettider: Måndag–torsdag 07:00 –19:00 Fredag 07:00 –17:00 Lördag 10:00 –15:00 Besöksadress: Stortorget 17 Skicka brev: Namn på verksamheten, 251 89&#8230;" />
+<meta property="og:url" content="https://arsredovisning.helsingborg.se/kontakta-oss/" />
+<meta property="og:site_name" content="Årsredovisning 2016" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Kontakta oss | Årsredovisning 2016" />
+<meta name="twitter:description" content="Helsingborg kontaktcenter Telefon:  042-10 50 00 Öppettider: Måndag–torsdag 07:00 –19:00 Fredag 07:00 –17:00 Lördag 10:00 –15:00 Besöksadress: Stortorget 17 Skicka brev: Namn på verksamheten, 251 89&#8230;" />
+<link rel="canonical" href="index.html" />
+<!-- End The Seo Framework by Sybre Waaijer | 0.00592s -->
+
+<link rel='dns-prefetch' href='../../helsingborg-stad.github.io/index.html' />
+<link rel='dns-prefetch' href='../../cdn.polyfill.io/index.html' />
+<link rel='dns-prefetch' href='../../f1-eu.readspeaker.com/index.html' />
+<link rel='dns-prefetch' href='../../www.google-analytics.com/index.html' />
+<link rel='dns-prefetch' href='../../s.w.org/index.html' />
+<script>(function(){function aa(a,b,c){return a.call.apply(a.bind,arguments)}function ba(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}}function p(a,b,c){p=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return p.apply(null,arguments)}var q=Date.now||function(){return+new Date};function ca(a,b){this.a=a;this.m=b||a;this.c=this.m.document}var da=!!window.FontFace;function t(a,b,c,d){b=a.c.createElement(b);if(c)for(var e in c)c.hasOwnProperty(e)&&("style"==e?b.style.cssText=c[e]:b.setAttribute(e,c[e]));d&&b.appendChild(a.c.createTextNode(d));return b}function u(a,b,c){a=a.c.getElementsByTagName(b)[0];a||(a=document.documentElement);a.insertBefore(c,a.lastChild)}function v(a){a.parentNode&&a.parentNode.removeChild(a)}
+function w(a,b,c){b=b||[];c=c||[];for(var d=a.className.split(/\s+/),e=0;e<b.length;e+=1){for(var f=!1,g=0;g<d.length;g+=1)if(b[e]===d[g]){f=!0;break}f||d.push(b[e])}b=[];for(e=0;e<d.length;e+=1){f=!1;for(g=0;g<c.length;g+=1)if(d[e]===c[g]){f=!0;break}f||b.push(d[e])}a.className=b.join(" ").replace(/\s+/g," ").replace(/^\s+|\s+$/,"")}function y(a,b){for(var c=a.className.split(/\s+/),d=0,e=c.length;d<e;d++)if(c[d]==b)return!0;return!1}
+function z(a){if("string"===typeof a.f)return a.f;var b=a.m.location.protocol;"about:"==b&&(b=a.a.location.protocol);return"https:"==b?"https:":"http:"}function ea(a){return a.m.location.hostname||a.a.location.hostname}
+function A(a,b,c){function d(){k&&e&&f&&(k(g),k=null)}b=t(a,"link",{rel:"stylesheet",href:b,media:"all"});var e=!1,f=!0,g=null,k=c||null;da?(b.onload=function(){e=!0;d()},b.onerror=function(){e=!0;g=Error("Stylesheet failed to load");d()}):setTimeout(function(){e=!0;d()},0);u(a,"head",b)}
+function B(a,b,c,d){var e=a.c.getElementsByTagName("head")[0];if(e){var f=t(a,"script",{src:b}),g=!1;f.onload=f.onreadystatechange=function(){g||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(g=!0,c&&c(null),f.onload=f.onreadystatechange=null,"HEAD"==f.parentNode.tagName&&e.removeChild(f))};e.appendChild(f);setTimeout(function(){g||(g=!0,c&&c(Error("Script load timeout")))},d||5E3);return f}return null};function C(){this.a=0;this.c=null}function D(a){a.a++;return function(){a.a--;E(a)}}function F(a,b){a.c=b;E(a)}function E(a){0==a.a&&a.c&&(a.c(),a.c=null)};function G(a){this.a=a||"-"}G.prototype.c=function(a){for(var b=[],c=0;c<arguments.length;c++)b.push(arguments[c].replace(/[\W_]+/g,"").toLowerCase());return b.join(this.a)};function H(a,b){this.c=a;this.f=4;this.a="n";var c=(b||"n4").match(/^([nio])([1-9])$/i);c&&(this.a=c[1],this.f=parseInt(c[2],10))}function fa(a){return I(a)+" "+(a.f+"00")+" 300px "+J(a.c)}function J(a){var b=[];a=a.split(/,\s*/);for(var c=0;c<a.length;c++){var d=a[c].replace(/['"]/g,"");-1!=d.indexOf(" ")||/^\d/.test(d)?b.push("'"+d+"'"):b.push(d)}return b.join(",")}function K(a){return a.a+a.f}function I(a){var b="normal";"o"===a.a?b="oblique":"i"===a.a&&(b="italic");return b}
+function ga(a){var b=4,c="n",d=null;a&&((d=a.match(/(normal|oblique|italic)/i))&&d[1]&&(c=d[1].substr(0,1).toLowerCase()),(d=a.match(/([1-9]00|normal|bold)/i))&&d[1]&&(/bold/i.test(d[1])?b=7:/[1-9]00/.test(d[1])&&(b=parseInt(d[1].substr(0,1),10))));return c+b};function ha(a,b){this.c=a;this.f=a.m.document.documentElement;this.h=b;this.a=new G("-");this.j=!1!==b.events;this.g=!1!==b.classes}function ia(a){a.g&&w(a.f,[a.a.c("wf","loading")]);L(a,"loading")}function M(a){if(a.g){var b=y(a.f,a.a.c("wf","active")),c=[],d=[a.a.c("wf","loading")];b||c.push(a.a.c("wf","inactive"));w(a.f,c,d)}L(a,"inactive")}function L(a,b,c){if(a.j&&a.h[b])if(c)a.h[b](c.c,K(c));else a.h[b]()};function ja(){this.c={}}function ka(a,b,c){var d=[],e;for(e in b)if(b.hasOwnProperty(e)){var f=a.c[e];f&&d.push(f(b[e],c))}return d};function N(a,b){this.c=a;this.f=b;this.a=t(this.c,"span",{"aria-hidden":"true"},this.f)}function O(a){u(a.c,"body",a.a)}function P(a){return"display:block;position:absolute;top:-9999px;left:-9999px;font-size:300px;width:auto;height:auto;line-height:normal;margin:0;padding:0;font-variant:normal;white-space:nowrap;font-family:"+J(a.c)+";"+("font-style:"+I(a)+";font-weight:"+(a.f+"00")+";")};function Q(a,b,c,d,e,f){this.g=a;this.j=b;this.a=d;this.c=c;this.f=e||3E3;this.h=f||void 0}Q.prototype.start=function(){var a=this.c.m.document,b=this,c=q(),d=new Promise(function(d,e){function k(){q()-c>=b.f?e():a.fonts.load(fa(b.a),b.h).then(function(a){1<=a.length?d():setTimeout(k,25)},function(){e()})}k()}),e=new Promise(function(a,d){setTimeout(d,b.f)});Promise.race([e,d]).then(function(){b.g(b.a)},function(){b.j(b.a)})};function R(a,b,c,d,e,f,g){this.v=a;this.B=b;this.c=c;this.a=d;this.s=g||"BESbswy";this.f={};this.w=e||3E3;this.u=f||null;this.o=this.j=this.h=this.g=null;this.g=new N(this.c,this.s);this.h=new N(this.c,this.s);this.j=new N(this.c,this.s);this.o=new N(this.c,this.s);a=new H(this.a.c+",serif",K(this.a));a=P(a);this.g.a.style.cssText=a;a=new H(this.a.c+",sans-serif",K(this.a));a=P(a);this.h.a.style.cssText=a;a=new H("serif",K(this.a));a=P(a);this.j.a.style.cssText=a;a=new H("sans-serif",K(this.a));a=
+P(a);this.o.a.style.cssText=a;O(this.g);O(this.h);O(this.j);O(this.o)}var S={D:"serif",C:"sans-serif"},T=null;function U(){if(null===T){var a=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);T=!!a&&(536>parseInt(a[1],10)||536===parseInt(a[1],10)&&11>=parseInt(a[2],10))}return T}R.prototype.start=function(){this.f.serif=this.j.a.offsetWidth;this.f["sans-serif"]=this.o.a.offsetWidth;this.A=q();la(this)};
+function ma(a,b,c){for(var d in S)if(S.hasOwnProperty(d)&&b===a.f[S[d]]&&c===a.f[S[d]])return!0;return!1}function la(a){var b=a.g.a.offsetWidth,c=a.h.a.offsetWidth,d;(d=b===a.f.serif&&c===a.f["sans-serif"])||(d=U()&&ma(a,b,c));d?q()-a.A>=a.w?U()&&ma(a,b,c)&&(null===a.u||a.u.hasOwnProperty(a.a.c))?V(a,a.v):V(a,a.B):na(a):V(a,a.v)}function na(a){setTimeout(p(function(){la(this)},a),50)}function V(a,b){setTimeout(p(function(){v(this.g.a);v(this.h.a);v(this.j.a);v(this.o.a);b(this.a)},a),0)};function W(a,b,c){this.c=a;this.a=b;this.f=0;this.o=this.j=!1;this.s=c}var X=null;W.prototype.g=function(a){var b=this.a;b.g&&w(b.f,[b.a.c("wf",a.c,K(a).toString(),"active")],[b.a.c("wf",a.c,K(a).toString(),"loading"),b.a.c("wf",a.c,K(a).toString(),"inactive")]);L(b,"fontactive",a);this.o=!0;oa(this)};
+W.prototype.h=function(a){var b=this.a;if(b.g){var c=y(b.f,b.a.c("wf",a.c,K(a).toString(),"active")),d=[],e=[b.a.c("wf",a.c,K(a).toString(),"loading")];c||d.push(b.a.c("wf",a.c,K(a).toString(),"inactive"));w(b.f,d,e)}L(b,"fontinactive",a);oa(this)};function oa(a){0==--a.f&&a.j&&(a.o?(a=a.a,a.g&&w(a.f,[a.a.c("wf","active")],[a.a.c("wf","loading"),a.a.c("wf","inactive")]),L(a,"active")):M(a.a))};function pa(a){this.j=a;this.a=new ja;this.h=0;this.f=this.g=!0}pa.prototype.load=function(a){this.c=new ca(this.j,a.context||this.j);this.g=!1!==a.events;this.f=!1!==a.classes;qa(this,new ha(this.c,a),a)};
+function ra(a,b,c,d,e){var f=0==--a.h;(a.f||a.g)&&setTimeout(function(){var a=e||null,k=d||null||{};if(0===c.length&&f)M(b.a);else{b.f+=c.length;f&&(b.j=f);var h,m=[];for(h=0;h<c.length;h++){var l=c[h],n=k[l.c],r=b.a,x=l;r.g&&w(r.f,[r.a.c("wf",x.c,K(x).toString(),"loading")]);L(r,"fontloading",x);r=null;null===X&&(X=window.FontFace?(x=/Gecko.*Firefox\/(\d+)/.exec(window.navigator.userAgent))?42<parseInt(x[1],10):!0:!1);X?r=new Q(p(b.g,b),p(b.h,b),b.c,l,b.s,n):r=new R(p(b.g,b),p(b.h,b),b.c,l,b.s,a,
+n);m.push(r)}for(h=0;h<m.length;h++)m[h].start()}},0)}function qa(a,b,c){var d=[],e=c.timeout;ia(b);var d=ka(a.a,c,a.c),f=new W(a.c,b,e);a.h=d.length;b=0;for(c=d.length;b<c;b++)d[b].load(function(b,d,c){ra(a,f,b,d,c)})};function sa(a,b){this.c=a;this.a=b}function ta(a,b,c){var d=z(a.c);a=(a.a.api||"fast.fonts.net/jsapi").replace(/^.*http(s?):(\/\/)?/,"");return d+"//"+a+"/"+b+".js"+(c?"?v="+c:"")}
+sa.prototype.load=function(a){function b(){if(f["__mti_fntLst"+d]){var c=f["__mti_fntLst"+d](),e=[],h;if(c)for(var m=0;m<c.length;m++){var l=c[m].fontfamily;void 0!=c[m].fontStyle&&void 0!=c[m].fontWeight?(h=c[m].fontStyle+c[m].fontWeight,e.push(new H(l,h))):e.push(new H(l))}a(e)}else setTimeout(function(){b()},50)}var c=this,d=c.a.projectId,e=c.a.version;if(d){var f=c.c.m;B(this.c,ta(c,d,e),function(e){e?a([]):(f["__MonotypeConfiguration__"+d]=function(){return c.a},b())}).id="__MonotypeAPIScript__"+
+d}else a([])};function ua(a,b){this.c=a;this.a=b}ua.prototype.load=function(a){var b,c,d=this.a.urls||[],e=this.a.families||[],f=this.a.testStrings||{},g=new C;b=0;for(c=d.length;b<c;b++)A(this.c,d[b],D(g));var k=[];b=0;for(c=e.length;b<c;b++)if(d=e[b].split(":"),d[1])for(var h=d[1].split(","),m=0;m<h.length;m+=1)k.push(new H(d[0],h[m]));else k.push(new H(d[0]));F(g,function(){a(k,f)})};function va(a,b,c){a?this.c=a:this.c=b+wa;this.a=[];this.f=[];this.g=c||""}var wa="//fonts.googleapis.com/css";function xa(a,b){for(var c=b.length,d=0;d<c;d++){var e=b[d].split(":");3==e.length&&a.f.push(e.pop());var f="";2==e.length&&""!=e[1]&&(f=":");a.a.push(e.join(f))}}
+function ya(a){if(0==a.a.length)throw Error("No fonts to load!");if(-1!=a.c.indexOf("kit="))return a.c;for(var b=a.a.length,c=[],d=0;d<b;d++)c.push(a.a[d].replace(/ /g,"+"));b=a.c+"?family="+c.join("%7C");0<a.f.length&&(b+="&subset="+a.f.join(","));0<a.g.length&&(b+="&text="+encodeURIComponent(a.g));return b};function za(a){this.f=a;this.a=[];this.c={}}
+var Aa={latin:"BESbswy","latin-ext":"\u00e7\u00f6\u00fc\u011f\u015f",cyrillic:"\u0439\u044f\u0416",greek:"\u03b1\u03b2\u03a3",khmer:"\u1780\u1781\u1782",Hanuman:"\u1780\u1781\u1782"},Ba={thin:"1",extralight:"2","extra-light":"2",ultralight:"2","ultra-light":"2",light:"3",regular:"4",book:"4",medium:"5","semi-bold":"6",semibold:"6","demi-bold":"6",demibold:"6",bold:"7","extra-bold":"8",extrabold:"8","ultra-bold":"8",ultrabold:"8",black:"9",heavy:"9",l:"3",r:"4",b:"7"},Ca={i:"i",italic:"i",n:"n",normal:"n"},
+Da=/^(thin|(?:(?:extra|ultra)-?)?light|regular|book|medium|(?:(?:semi|demi|extra|ultra)-?)?bold|black|heavy|l|r|b|[1-9]00)?(n|i|normal|italic)?$/;
+function Ea(a){for(var b=a.f.length,c=0;c<b;c++){var d=a.f[c].split(":"),e=d[0].replace(/\+/g," "),f=["n4"];if(2<=d.length){var g;var k=d[1];g=[];if(k)for(var k=k.split(","),h=k.length,m=0;m<h;m++){var l;l=k[m];if(l.match(/^[\w-]+$/)){var n=Da.exec(l.toLowerCase());if(null==n)l="";else{l=n[2];l=null==l||""==l?"n":Ca[l];n=n[1];if(null==n||""==n)n="4";else var r=Ba[n],n=r?r:isNaN(n)?"4":n.substr(0,1);l=[l,n].join("")}}else l="";l&&g.push(l)}0<g.length&&(f=g);3==d.length&&(d=d[2],g=[],d=d?d.split(","):
+g,0<d.length&&(d=Aa[d[0]])&&(a.c[e]=d))}a.c[e]||(d=Aa[e])&&(a.c[e]=d);for(d=0;d<f.length;d+=1)a.a.push(new H(e,f[d]))}};function Fa(a,b){this.c=a;this.a=b}var Ga={Arimo:!0,Cousine:!0,Tinos:!0};Fa.prototype.load=function(a){var b=new C,c=this.c,d=new va(this.a.api,z(c),this.a.text),e=this.a.families;xa(d,e);var f=new za(e);Ea(f);A(c,ya(d),D(b));F(b,function(){a(f.a,f.c,Ga)})};function Ha(a,b){this.c=a;this.a=b}Ha.prototype.load=function(a){var b=this.a.id,c=this.c.m;b?B(this.c,(this.a.api||"https://use.typekit.net/")+"/"+b+".js",function(b){if(b)a([]);else if(c.Typekit&&c.Typekit.config&&c.Typekit.config.fn){b=c.Typekit.config.fn;for(var e=[],f=0;f<b.length;f+=2)for(var g=b[f],k=b[f+1],h=0;h<k.length;h++)e.push(new H(g,k[h]));try{c.Typekit.load({events:!1,classes:!1,async:!0})}catch(m){}a(e)}},2E3):a([])};function Ia(a,b){this.c=a;this.f=b;this.a=[]}Ia.prototype.load=function(a){var b=this.f.id,c=this.c.m,d=this;b?(c.__webfontfontdeckmodule__||(c.__webfontfontdeckmodule__={}),c.__webfontfontdeckmodule__[b]=function(b,c){for(var g=0,k=c.fonts.length;g<k;++g){var h=c.fonts[g];d.a.push(new H(h.name,ga("font-weight:"+h.weight+";font-style:"+h.style)))}a(d.a)},B(this.c,z(this.c)+(this.f.api||"http://f.fontdeck.com/s/css/js/")+ea(this.c)+"/"+b+".js",function(b){b&&a([])})):a([])};var Y=new pa(window);Y.a.c.custom=function(a,b){return new ua(b,a)};Y.a.c.fontdeck=function(a,b){return new Ia(b,a)};Y.a.c.monotype=function(a,b){return new sa(b,a)};Y.a.c.typekit=function(a,b){return new Ha(b,a)};Y.a.c.google=function(a,b){return new Fa(b,a)};var Z={load:p(Y.load,Y)};"function"===typeof define&&define.amd?define(function(){return Z}):"undefined"!==typeof module&&module.exports?module.exports=Z:(window.WebFont=Z,window.WebFontConfig&&Y.load(window.WebFontConfig));}());
+</script><link rel='stylesheet' id='hbg-prime-css'  href='../helsingborg-stad.github.io/styleguide-web/dist/css/hbg-prime-purple.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='municipio-css'  href='../wp-content/themes/municipio/assets/dist/css/app.min-58ea072d72.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='../wp-content/plugins/tablepress/css/default.min.css' type='text/css' media='all' />
+<style id='tablepress-default-inline-css' type='text/css'>
+.tablepress{margin-top:1px!important}.tablepress-id-188 td.column-2,.tablepress-id-188 td.column-3,.tablepress-id-188 td.column-4{width:166px!important}.tablepress-id-95 .row-2,.tablepress-id-97 .row-6,.tablepress-id-100 .row-2,.tablepress-id-108 .row-7,.tablepress-id-109 .row-2,.tablepress-id-112 .row-9,.tablepress-id-113 .row-6,.tablepress-id-114 .row-5,.tablepress-id-116 .row-2,.tablepress-id-122 .row-2,.tablepress-id-125 .row-14,.tablepress-id-133 .row-2,.tablepress-id-138 .row-2{white-space:nowrap}.nottitlar{font-size:16px;margin-top:2em!important;padding-bottom:.3em!important;color:#7b075e}.tablepress-id-323 td.column-3{border-left:1px solid #e6e6e6!important}.tablepress-id-232 td.column-5,.tablepress-id-232 td.column-3{border-right:1px solid #e6e6e6!important}.tablepress-id-233 td.column-4,.tablepress-id-233 td.column-6{border-right:1px solid #e6e6e6!important}.tablepress-id-233 td.column-3{border-left:1px solid #e6e6e6!important}p{max-width:100%!important}.tablepress{font-size:12px}.tablepress a{text-decoration:none!important}.tablepress-table-name{font-size:16px;margin-top:2em!important;padding-bottom:.3em!important;color:#7b075e}.tablepress .row-hover tr:hover td{background-color:#d35098!important;color:#fff}.tablepress .column-1{width:400px}.tablepress-id-43 .column-1{width:450px}.tablepress-id-58 .column-1{width:410px}.tablepress-id-58 .column-3{width:163px}.tablepress-id-79 .column-1{width:330px!important}.tablepress-id-79 td.column-2,.tablepress-id-79 td.column-3,.tablepress-id-79 td.column-4,.tablepress-id-79 td.column-5,.tablepress-id-79 td.column-6{width:120px!important}.tablepress-id-80 .column-1{width:330px!important}.tablepress-id-80 td.column-2,.tablepress-id-80 td.column-3,.tablepress-id-80 td.column-4,.tablepress-id-80 td.column-5,.tablepress-id-80 td.column-6{width:120px!important}.tablepress-id-2 .column-1,.tablepress-id-68 .column-1,.tablepress-id-69 .column-1,.tablepress-id-85 .column-1,.tablepress-id-162 .column-1,.tablepress-id-164 .column-1,.tablepress-id-219 .column-1,.tablepress-id-235 .column-1{width:400px;white-space:nowrap}.tablepress-id-88 .column-1{width:250px}.tablepress-id-88 .column-2,.tablepress-id-88 .column-3,.tablepress-id-88 .column-4,.tablepress-id-88 .column-5,.tablepress-id-88 .column-6,.tablepress-id-88 .column-7,.tablepress-id-88 .column-8{width:110px}.tablepress-id-232 th.column-4,.tablepress-id-232 th.column-6{width:220px;text-align:center!important}.tablepress-id-211 th.column-4{width:177px}.tablepress-id-233 th.column-3,.tablepress-id-233 th.column-5,.tablepress-id-233 th.column-7{width:200px;text-align:center!important}.tablepress-id-234 th.column-2,.tablepress-id-234 th.column-4,.tablepress-id-234 th.column-6,.tablepress-id-234 th.column-8,.tablepress-id-234 th.column-10{text-align:center!important}a.discuss{color:#fff}.fotnot{font-size:10px!important}.tema-purple{color:#a84b97}.tema-darkpurple{color:#6f1e82}.tema-pink{color:#d24e97}.tema-darkblue{color:#0068b4}.tema-lightblue{color:#4bb4e7}.text-green{color:green}.tablepress-id-6 td.column-3,.tablepress-id-25 td.column-3,.tablepress-id-26 td.column-3,.tablepress-id-27 td.column-3,.tablepress-id-31 td.column-3,.tablepress-id-32 td.column-3,.tablepress-id-36 td.column-3,.tablepress-id-37 td.column-3,.tablepress-id-40 td.column-3,.tablepress-id-40 td.column-4,.tablepress-id-42 td.column-3,.tablepress-id-43 td.column-3,.tablepress-id-44 td.column-3,.tablepress-id-45 td.column-3,.tablepress-id-46 td.column-3,.tablepress-id-47 td.column-3,.tablepress-id-48 td.column-3,.tablepress-id-49 td.column-3,.tablepress-id-50 td.column-3,.tablepress-id-51 td.column-3,.tablepress-id-52 td.column-3,.tablepress-id-53 td.column-3,.tablepress-id-54 td.column-3,.tablepress-id-55 td.column-3,.tablepress-id-56 td.column-3,.tablepress-id-57 td.column-3,.tablepress-id-58 td.column-3,.tablepress-id-59 td.column-3,.tablepress-id-60 td.column-3,.tablepress-id-62 td.column-3,.tablepress-id-63 td.column-3,.tablepress-id-64 td.column-3,.tablepress-id-65 td.column-3,.tablepress-id-66 td.column-3,.tablepress-id-67 td.column-3,.tablepress-id-68 td.column-3,.tablepress-id-69 td.column-3,.tablepress-id-70 td.column-3,.tablepress-id-71 td.column-3,.tablepress-id-72 td.column-3,.tablepress-id-73 td.column-3,.tablepress-id-74 td.column-3,.tablepress-id-75 td.column-3,.tablepress-id-76 td.column-3,.tablepress-id-77 td.column-3,.tablepress-id-81 td.column-3,.tablepress-id-81 td.column-4,.tablepress-id-82 td.column-3,.tablepress-id-83 td.column-3,.tablepress-id-83 td.column-4,.tablepress-id-84 td.column-3,.tablepress-id-85 td.column-3,.tablepress-id-86 td.column-3,.tablepress-id-87 td.column-3,.tablepress-id-140 td.column-3,.tablepress-id-141 td.column-3,.tablepress-id-142 td.column-3,.tablepress-id-143 td.column-3,.tablepress-id-144 td.column-3,.tablepress-id-145 td.column-3,.tablepress-id-146 td.column-3,.tablepress-id-147 td.column-3,.tablepress-id-148 td.column-3,.tablepress-id-149 td.column-3,.tablepress-id-150 td.column-3,.tablepress-id-151 td.column-3,.tablepress-id-152 td.column-3,.tablepress-id-154 td.column-3,.tablepress-id-155 td.column-3,.tablepress-id-156 td.column-3,.tablepress-id-157 td.column-3,.tablepress-id-158 td.column-3,.tablepress-id-159 td.column-3,.tablepress-id-160 td.column-3,.tablepress-id-161 td.column-3,.tablepress-id-162 td.column-3,.tablepress-id-163 td.column-3,.tablepress-id-164 td.column-3,.tablepress-id-165 td.column-3,.tablepress-id-166 td.column-3,.tablepress-id-167 td.column-3,.tablepress-id-168 td.column-3,.tablepress-id-169 td.column-3,.tablepress-id-170 td.column-3,.tablepress-id-171 td.column-3,.tablepress-id-172 td.column-3,.tablepress-id-173 td.column-3,.tablepress-id-174 td.column-3,.tablepress-id-175 td.column-3,.tablepress-id-176 td.column-3,.tablepress-id-203 td.column-3,.tablepress-id-205 td.column-3,.tablepress-id-219 td.column-3,.tablepress-id-223 td.column-3,.tablepress-id-224 td.column-3,.tablepress-id-225 td.column-3,.tablepress-id-226 td.column-3,.tablepress-id-227 td.column-3,.tablepress-id-228 td.column-3,.tablepress-id-229 td.column-3{background-color:#e6e6e6!important}.tablepress-id-23 td.column-4,.tablepress-id-177 td.column-4,.tablepress-id-178 td.column-4,.tablepress-id-179 td.column-4,.tablepress-id-180 td.column-4,.tablepress-id-181 td.column-4,.tablepress-id-182 td.column-4,.tablepress-id-183 td.column-4,.tablepress-id-184 td.column-4,.tablepress-id-185 td.column-4,.tablepress-id-186 td.column-4,.tablepress-id-187 td.column-4,.tablepress-id-188 td.column-4,.tablepress-id-189 td.column-4,.tablepress-id-190 td.column-4,.tablepress-id-191 td.column-4,.tablepress-id-192 td.column-4,.tablepress-id-193 td.column-4,.tablepress-id-194 td.column-4,.tablepress-id-206 td.column-4,.tablepress-id-207 td.column-4,.tablepress-id-208 td.column-4,.tablepress-id-209 td.column-4,.tablepress-id-210 td.column-4,.tablepress-id-211 td.column-4,.tablepress-id-212 td.column-4,.tablepress-id-213 td.column-4,.tablepress-id-214 td.column-4,.tablepress-id-215 td.column-4,.tablepress-id-216 td.column-4,.tablepress-id-217 td.column-4,.tablepress-id-218 td.column-4,.tablepress-id-220 td.column-4,.tablepress-id-221 td.column-4,.tablepress-id-222 td.column-4{background-color:#e6e6e6!important}.tablepress-id-11 thead th{text-align:left!important}.tablepress thead th{background-color:#7b075e;color:#fff}.tablepress-id-2 thead th{background-color:#7b075e!important;color:#fff}.tablepress-id-6 thead th{background-color:#7b075e;color:#fff}.tablepress-id-11 thead th{background-color:#7b075e;color:#fff}.tablepress-id-12 thead th{background-color:#7b075e;color:#fff}.tablepress-id-13 thead th{background-color:#7b075e;color:#fff}.tablepress-id-14 thead th{background-color:#7b075e;color:#fff}.tablepress-id-16 thead th{background-color:#7b075e;color:#fff}.tablepress-id-17 thead th{background-color:#7b075e;color:#fff}.tablepress-id-18 thead th{background-color:#7b075e;color:#fff}.tablepress-id-19 thead th{background-color:#7b075e;color:#fff}.tablepress-id-20 thead th{background-color:#7b075e;color:#fff}.tablepress-id-22 thead th{background-color:#7b075e;color:#fff}.tablepress-id-23 thead th{background-color:#7b075e;color:#fff}.tablepress-id-219 thead th{background-color:#7b075e;color:#fff}.tablepress-id-25 thead th{background-color:#7b075e;color:#fff}.tablepress tfoot th{background-color:#7b075e!important;color:#fff;font-weight:700}.tablepress .column-2,.tablepress .column-3,.tablepress .column-4,.tablepress .column-5,.tablepress .column-6,.tablepress .column-7,.tablepress .column-8,.tablepress .column-9,.tablepress .column-10,.tablepress .column-11,.tablepress .column-12,.tablepress .column-13,.tablepress .column-14,.tablepress .column-15,.tablepress .column-16,.tablepress .column-17,.tablepress .column-18,.tablepress .column-19,.tablepress .column-20{text-align:right;white-space:nowrap}.tablepress-id-2 .row-24 td,.tablepress-id-2 .row-29 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-36 .row-8 td,.tablepress-id-36 .row-16 td,.tablepress-id-36 .row-24 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-37 .row-6 td,.tablepress-id-37 .row-12 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-38 .row-16 td,.tablepress-id-38 .row-18 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-40 .row-6 td,.tablepress-id-40 .row-11 td,.tablepress-id-40 .row-15 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-42 .row-6 td,.tablepress-id-42 .row-11 td,.tablepress-id-42 .row-15 td,.tablepress-id-42 .row-22 td,.tablepress-id-42 .row-28 td,.tablepress-id-42 .row-32 td,.tablepress-id-42 .row-36 td,.tablepress-id-42 .row-40 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-43 .row-7 td,.tablepress-id-43 .row-12 td,.tablepress-id-43 .row-22 td,.tablepress-id-43 .row-28 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-56 .row-7 td,.tablepress-id-56 .row-14 td,.tablepress-id-56 .row-19 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-57 .row-7 td,.tablepress-id-57 .row-14 td,.tablepress-id-57 .row-21 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-59 .row-7 td,.tablepress-id-59 .row-14 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-61 .row-38 td,.tablepress-id-61 .row-47 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-66 .row-5 td,.tablepress-id-66 .row-11 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-67 .row-6 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-68 .row-15 td,.tablepress-id-68 .row-22 td,.tablepress-id-68 .row-29 td,.tablepress-id-68 .row-36 td,.tablepress-id-68 .row-43 td,.tablepress-id-68 .row-50 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-69 .row-10 td,.tablepress-id-69 .row-18 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-81 .row-6 td,.tablepress-id-81 .row-11 td,.tablepress-id-81 .row-15 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-83 .row-5 td,.tablepress-id-83 .row-9 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-84 .row-8 td,.tablepress-id-84 .row-14 td,.tablepress-id-84 .row-19 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-85 .row-6 td,.tablepress-id-85 .row-11 td,.tablepress-id-85 .row-17 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-88 .row-17 td,.tablepress-id-88 .row-19 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-89 .row-16 td,.tablepress-id-89 .row-18 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-149 .row-6 td,.tablepress-id-149 .row-12 td,.tablepress-id-149 .row-17 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-152 .row-7 td,.tablepress-id-152 .row-14 td,.tablepress-id-152 .row-21 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-150 .row-7 td,.tablepress-id-150 .row-14 td,.tablepress-id-150 .row-19 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-158 .row-7 td{border-top:1px solid #7b075e!important;border-bottom:0;border-left:0;border-right:0}.tablepress-id-162 .row-7 td,.tablepress-id-162 .row-14 td,.tablepress-id-162 .row-21 td,.tablepress-id-162 .row-28 td,.tablepress-id-162 .row-35 td,.tablepress-id-162 .row-42 td,.tablepress-id-162 .row-49 td,.tablepress-id-203 .row-6 td,.tablepress-id-203 .row-11 td,.tablepress-id-203 .row-15 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-205 .row-1 td,.tablepress-id-205 .row-6 td,.tablepress-id-205 .row-11 td,.tablepress-id-205 .row-15 td,.tablepress-id-205 .row-22 td,.tablepress-id-205 .row-28 td,.tablepress-id-205 .row-33 td,.tablepress-id-205 .row-37 td,.tablepress-id-205 .row-41 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-219 .row-7 td,.tablepress-id-219 .row-12 td,.tablepress-id-219 .row-22 td,.tablepress-id-219 .row-28 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-236 .row-20 td{border-top:1px solid #7b075e;border-bottom:0;border-left:0;border-right:0}.tablepress-id-38 .row-19 td,.tablepress-id-39 .row-11 td,.tablepress-id-40 .row-16 td,.tablepress-id-42 .row-23 td,.tablepress-id-42 .row-42 td,.tablepress-id-43 .row-29 td,.tablepress-id-44 .row-14 td,.tablepress-id-45 .row-15 td,.tablepress-id-48 .row-6 td,.tablepress-id-50 .row-5 td,.tablepress-id-51 .row-9 td,.tablepress-id-52 .row-6 td,.tablepress-id-53 .row-8 td,.tablepress-id-59 .row-15 td,.tablepress-id-66 .row-12 td,.tablepress-id-66 .row-14 td,.tablepress-id-67 .row-10 td,.tablepress-id-67 .row-19 td,.tablepress-id-67 .row-8 td,.tablepress-id-68 .row-7 td,.tablepress-id-68 .row-9 td,.tablepress-id-69 .row-10 td,.tablepress-id-69 .row-12 td,.tablepress-id-69 .row-18 td,.tablepress-id-72 .row-6 td,.tablepress-id-81 .row-16 td,.tablepress-id-82 .row-15 td,.tablepress-id-83 .row-12 td,.tablepress-id-84 .row-9 td,.tablepress-id-84 .row-21 td,.tablepress-id-85 .row-20 td,.tablepress-id-87 .row-5 td,.tablepress-id-88 .row-20 td,.tablepress-id-89 .row-19 td,.tablepress-id-152 .row-22 td,.tablepress-id-159 .row-10 td,.tablepress-id-164 .row-7 td,.tablepress-id-168 .row-7 td,.tablepress-id-203 .row-18 td,.tablepress-id-205 .row-23 td,.tablepress-id-205 .row-43 td,.tablepress-id-219 .row-29 td,.tablepress-id-224 .row-12 td{background-color:#7b075e!important;color:#fff;font-weight:700}.tablepress-id-7 .row-2 td,.tablepress-id-7 .row-8 td,.tablepress-id-7 .row-16 td,.tablepress-id-8 .row-2 td,.tablepress-id-8 .row-5 td,.tablepress-id-9 .row-2 td,.tablepress-id-9 .row-4 td,.tablepress-id-10 .row-2 td,.tablepress-id-38 .row-16 td,.tablepress-id-38 .row-18 td,.tablepress-id-40 .row-12 td,.tablepress-id-42 .row-16 td,.tablepress-id-42 .row-22 td,.tablepress-id-42 .row-28 td,.tablepress-id-42 .row-32 td,.tablepress-id-42 .row-41 td,.tablepress-id-43 .row-13 td,.tablepress-id-43 .row-23 td,.tablepress-id-81 .row-12 td,.tablepress-id-82 .row-7 td,.tablepress-id-82 .row-14 td,.tablepress-id-82 .row-19 td,.tablepress-id-82 .row-21 td,.tablepress-id-82 .row-24 td,.tablepress-id-83 .row-6 td,.tablepress-id-83 .row-10 td,.tablepress-id-84 .row-6 td,.tablepress-id-84 .row-8 td,.tablepress-id-84 .row-20 td,.tablepress-id-85 .row-12 td,.tablepress-id-85 .row-18 td,.tablepress-id-88 .row-17 td,.tablepress-id-88 .row-19 td,.tablepress-id-89 .row-16 td,.tablepress-id-89 .row-18 td,.tablepress-id-95 .row-2 td,.tablepress-id-95 .row-6 td,.tablepress-id-96 .row-2 td,.tablepress-id-96 .row-4 td,.tablepress-id-97 .row-2 td,.tablepress-id-97 .row-6 td,.tablepress-id-98 .row-2 td,.tablepress-id-99 .row-2 td,.tablepress-id-99 .row-4 td,.tablepress-id-100 .row-2 td,.tablepress-id-100 .row-11 td,.tablepress-id-101 .row-2 td,.tablepress-id-101 .row-7 td,.tablepress-id-103 .row-2 td,.tablepress-id-104 .row-2 td,.tablepress-id-104 .row-10 td,.tablepress-id-104 .row-12 td,.tablepress-id-104 .row-14 td,.tablepress-id-105 .row-2 td,.tablepress-id-106 .row-2 td,.tablepress-id-106 .row-4 td,.tablepress-id-107 .row-2 td,.tablepress-id-108 .row-2 td,.tablepress-id-108 .row-7 td,.tablepress-id-108 .row-9 td,.tablepress-id-109 .row-2 td,.tablepress-id-109 .row-4 td,.tablepress-id-110 .row-2 td,.tablepress-id-110 .row-6 td,.tablepress-id-111 .row-2 td,.tablepress-id-112 .row-2 td,.tablepress-id-112 .row-6 td,.tablepress-id-112 .row-9 td,.tablepress-id-113 .row-2 td,.tablepress-id-113 .row-6 td,.tablepress-id-114 .row-2 td,.tablepress-id-114 .row-5 td,.tablepress-id-115 .row-2 td,.tablepress-id-116 .row-2 td,.tablepress-id-116 .row-4 td,.tablepress-id-116 .row-10 td,.tablepress-id-117 .row-2 td,.tablepress-id-117 .row-4 td,.tablepress-id-117 .row-6 td,.tablepress-id-118 .row-2 td,.tablepress-id-118 .row-4 td,.tablepress-id-119 .row-2 td,.tablepress-id-120 .row-2 td,.tablepress-id-121 .row-2 td,.tablepress-id-121 .row-6 td,.tablepress-id-122 .row-2 td,.tablepress-id-122 .row-5 td,.tablepress-id-123 .row-2 td,.tablepress-id-123 .row-5 td,.tablepress-id-124 .row-2 td,.tablepress-id-125 .row-2 td,.tablepress-id-125 .row-8 td,.tablepress-id-125 .row-14 td,.tablepress-id-126 .row-2 td,.tablepress-id-127 .row-2 td,.tablepress-id-128 .row-2 td,.tablepress-id-128 .row-8 td,.tablepress-id-129 .row-2 td,.tablepress-id-130 .row-2 td,.tablepress-id-131 .row-2 td,.tablepress-id-132 .row-2 td,.tablepress-id-132 .row-7 td,.tablepress-id-132 .row-14 td,.tablepress-id-133 .row-2 td,.tablepress-id-133 .row-5 td,.tablepress-id-134 .row-2 td,.tablepress-id-134 .row-6 td,.tablepress-id-134 .row-10 td,.tablepress-id-135 .row-2 td,.tablepress-id-136 .row-2 td,.tablepress-id-136 .row-5 td,.tablepress-id-136 .row-8 td,.tablepress-id-137 .row-2 td,.tablepress-id-137 .row-7 td,.tablepress-id-138 .row-2 td,.tablepress-id-138 .row-5 td,.tablepress-id-139 .row-2 td,.tablepress-id-203 .row-12 td,.tablepress-id-203 .row-16 td,.tablepress-id-205 .row-16 td,.tablepress-id-205 .row-22 td,.tablepress-id-205 .row-28 td,.tablepress-id-205 .row-33 td,.tablepress-id-205 .row-42 td,.tablepress-id-219 .row-13 td,.tablepress-id-219 .row-23 td{background-color:#a84c98!important;color:#fff;font-weight:700}
+</style>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HbgPrimeArgs = {"api":{"root":"https:\/\/arsredovisning.helsingborg.se\/wp-json\/","nonce":"bea6c45207"},"cookieConsent":{"show":true,"message":"<p>P\u00e5 den h\u00e4r webbplatsen anv\u00e4nder vi cookies (kakor) f\u00f6r att webbplatsen ska fungera p\u00e5 ett bra s\u00e4tt f\u00f6r dig. Genom att klicka vidare godk\u00e4nner du att vi anv\u00e4nder cookies.<\/p>\n","button":"Jag godk\u00e4nner","placement":"bottom-fixed"},"googleTranslate":{"gaTrack":null,"gaUA":"UA-16679007-26"},"scrollElevator":{"cta":"","tooltip":"","tooltipPosition":"data-tooltip-left"},"tableFilter":{"empty":"Inga matchande filter hittades\u2026"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../helsingborg-stad.github.io/styleguide-web/dist/js/hbg-prime.min.js' defer='defer'></script>
+<script type='text/javascript' src='../../cdn.polyfill.io/v2/polyfill.min5859.js?ver=4.9.1' defer='defer'></script>
+<script type='text/javascript' src='../../f1-eu.readspeaker.com/script/5507/ReadSpeaker7b43.js?pids=embhl&amp;jit=1&amp;ver=1.0.0'></script>
+<!-- Stream WordPress user activity plugin v3.1.1 -->
+
+            <script>
+            WebFont.load({
+                google: {
+                  families: ['Roboto:300,400,400i,500,500i,700,700i,900']
+                },
+                timeout: 2000
+              });
+            </script>
+        
+            <style>
+            body {
+                font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+            }
+            </style>
+        		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style>.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin-top: 15px !important;
+    padding: 0;
+    width: 100%!important;
+}
+
+.title {display:none;}
+
+b, strong {
+    font-weight: bold !important;
+}
+
+.badge {
+border-radius: 50%; 
+display: inline-block;
+background: #c5c5c5; 
+color: #fff; 
+line-height: inherit; 
+text-align: center; 
+padding: 0 3px; 
+}
+
+blockquote {
+color:#7b075e;
+font-size:22px;
+max-width:90%;
+}
+
+article:not(.full) li, article:not(.full) p {
+    max-width: 100%;
+}
+
+article blockquote:after, article blockquote:before {
+display: none;
+}
+
+article blockquote {
+    border-left:0px solid #e7e5e1;
+}
+
+/*
+.widget_calendar article caption, article .widget_calendar caption, article .wp-caption, article h1, article h2, article h3, article h4, article h5, article h6, article li, article p {
+    max-width: 100%;
+}
+*/
+
+.pricon-green {
+color: #a0c753
+}
+.pricon-orange{
+color: #f7a500
+}
+.pricon-red{
+color: #cb004f
+}
+
+body:not(.material-no-shadow) .box:not(.box-news-horizontal):not(.box-panel-secondary):not(.box-news-circular) {
+    box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+}
+body:not(.material-no-shadow) .box.box-panel-secondary>:not(.box-title):not(.accordion-table-head) {
+    box-shadow: 0 0px 0px rgba(0,0,0,.0) !important;
+}
+.box-panel .box-content, .box-panel .dataTables_wrapper, .sidebar-content-area-bottom [class^=widget_]:not(.widget_calendar) .box-content, .sidebar-content-area-bottom [class^=widget_]:not(.widget_calendar) .dataTables_wrapper, .sidebar-content-area [class^=widget_]:not(.widget_calendar) .box-content, .sidebar-content-area [class^=widget_]:not(.widget_calendar) .dataTables_wrapper {
+    border: 0px solid #e7e5e1 !important;
+    border-top: 0;
+}
+
+
+
+.creamy {
+    background-color: #fff  !important; 
+    border: 1px solid #e7e5e1;
+}
+
+
+.mod-script h4.box-title {
+	font-size: 16px !important;
+	margin-top: 2em !important;
+	padding-bottom: .3em !important;
+	color: #7b075e !important;
+        font-weight: 700 !important;
+}
+.modularity-mod-script h4.box-title {
+	font-size: 16px !important;
+	margin-top: 2em !important;
+	padding-bottom: .3em !important;
+	color: #7b075e !important;
+        font-weight: 700 !important;
+}
+
+.modularity-mod-video h4.box-title {
+	font-size: 16px !important;
+	padding-bottom: .3em !important;
+	color: #7b075e !important;
+        font-weight: 700 !important;
+}
+
+.tableredovisning td.nobr{
+ white-space: nowrap;
+}
+
+
+.highcharts-title { display:none !important;}
+.highcharts-subtitle { display:none !important;}
+.highcharts-credits { display:none !important;}
+.highcharts-button { display:none !important;}
+
+
+
+@media print {
+	
+a[href]:after {
+    	content: none !important;
+} 
+
+.logotype{
+display:none !important;
+}
+.site-header{
+display:none !important;
+}
+.breadcrumbs{
+display:none !important;
+}
+
+}</style>
+</head>
+<body class="page-template-default page page-id-112 no-js error404-2">
+    <!--[if lt IE 9]>
+        <div class="notice info browserupgrade">
+            <div class="container">
+                <div class="grid-table grid-va-middle">
+                    <div class="grid-fit-content">
+                        <i class="fa fa-plug"></i>
+                    </div>
+                    <div class="grid-auto">
+                        <strong>Du använder en gammal webbläsare.</strong> För att hemsidan ska fungera så bra som möjligt bör du byta till en modernare webbläsare. På <a href="http://browsehappy.com">browsehappy.com</a> kan du få hjälp att hitta en ny modern webbläsare.
+                    </div>
+                </div>
+            </div>
+        </div>
+    <![endif]-->
+
+    <a href="#main-menu" class="btn btn-default btn-block btn-lg btn-offcanvas" tabindex="1">Hoppa till huvudmenyn</a>
+    <a href="#main-content" class="btn btn-default btn-block btn-lg btn-offcanvas" tabindex="2">Hoppa till innehåll</a>
+
+    <div id="wrapper">
+        
+        
+        <header id="site-header" class="site-header header-contrasted-nav">
+    <div class="print-only container">
+        <div class="grid">
+            <div class="grid-sm-12">
+                <a href="../index.html" class="logotype" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.4 66.9"><path d="M74.5 41.6v-7.2h-8.3v7.2h-2.6V25.1h2.6v7h8.3v-7h2.7v16.5h-2.7zm8.8 0V25.1h8.8l-.8 2.3h-5.4v4.7h5.4v2.2h-5.4v5.1h6.3v2.2h-8.9zm14.3 0V25.1h2.6v14.3h6.1v2.2h-8.7zm17.3.3c-2.3 0-3.8-.8-4.9-1.4l1.1-2c.8.6 2.1 1.2 3.7 1.2 1.3 0 2.9-.6 2.9-2.1 0-2.5-4-3-6-5.3-.7-.8-1.1-1.7-1.1-2.9 0-2.4 1.9-4.4 5.2-4.4 1.8 0 3.1.5 3.9.9v2.5c-1.1-.7-2.4-1.1-3.8-1.1s-2.6.6-2.6 1.9c0 3.3 7.2 3.2 7.2 8.2 0 2.7-2.5 4.5-5.6 4.5zm10.8-.3V25.1h2.7v16.5h-2.7zm20.8 0l-7.8-10.1c-.8-1-1.2-1.7-1.6-2.4v12.6h-2.6V25.1h2.7l7.5 9.8c.9 1.2 1.4 1.8 1.7 2.5V25.2h2.6v16.5h-2.5v-.1zm15.6.3c-5 0-8.3-3.5-8.3-8.3 0-5 3.6-8.6 9-8.6 2.1 0 3.7.5 4.8.9v2.5c-1.2-.6-2.8-1.2-4.6-1.2-4.3 0-6.3 2.7-6.3 6.1 0 3.7 2.3 6.3 6.1 6.3 1.2 0 2.2-.2 2.8-.6v-5.7h2.6v7c-1.4.8-3.6 1.6-6.1 1.6zm16.8-7.5h-2.2v5h2.1c2.1 0 3.2-1 3.2-2.6 0-1.4-1.2-2.4-3.1-2.4zm-2.2-7v4.7h1.9c1.2 0 2.4-.9 2.4-2.4 0-1.4-.8-2.3-2.6-2.3h-1.7zm2.2 14.2H174V25.1h5c3.2 0 4.6 2.1 4.6 4.1 0 1.5-.7 2.9-2.1 3.5 1.7.4 3.2 2 3.2 4 0 2.3-1.5 4.9-5.8 4.9zm18-14.3c-3.3 0-5.6 2.4-5.6 6.2 0 3.8 2.2 6.2 5.6 6.2 3.3 0 5.5-2.4 5.5-6.2.1-3.7-2-6.2-5.5-6.2zm-5.9.1c1.5-1.5 3.6-2.4 6-2.4 2.6 0 4.8 1 6.3 2.6 1.4 1.5 2.1 3.5 2.1 5.9 0 2.5-.8 4.7-2.4 6.2-1.5 1.5-3.5 2.3-6 2.3-2.3 0-4.3-.7-5.7-2-1.7-1.5-2.6-3.8-2.6-6.3-.1-2.6.8-4.8 2.3-6.3zm23.2 0h-1.5v5.5h1.6c1.7 0 3-1.3 3-2.9-.1-1.4-.9-2.6-3.1-2.6zm4.6 14.2c-2.6-4.3-3.9-6.5-4.5-6.7h-1.5v6.7h-2.6V25.1h4.1c4.1 0 5.7 2.1 5.7 4.6 0 2.3-1.5 3.7-3.1 4.4.7.3 2.4 3.3 5 7.5h-3.1zm14.5.3c-5 0-8.3-3.5-8.3-8.3 0-5 3.6-8.6 9-8.6 2.1 0 3.7.5 4.8.9v2.5c-1.2-.6-2.8-1.2-4.6-1.2-4.3 0-6.3 2.7-6.3 6.1 0 3.7 2.3 6.3 6.1 6.3 1.2 0 2.2-.2 2.8-.6v-5.7h2.6v7c-1.3.8-3.5 1.6-6.1 1.6z" fill="#1D1D1B"></path><path d="M42.5 17.5H1.2v39.3c0 1.7.7 3.5 3.4 4.2 2.7.7 12.6 3 14.4 3.5 2.4.6 2.8 2.3 2.9 2.5 0-.1.5-1.9 2.9-2.5 1.8-.4 11.8-2.8 14.4-3.5 2.7-.7 3.4-2.5 3.4-4.2-.1-1.8-.1-1.8-.1-39.3z" fill="#FFF"></path><path d="M16.3 38.9h-9c-.9.3-3 1.4-3 3.4 0 .7.3 1.2.6 1.5h6.5l4.9-4.9zm5.4-5.2l.1.1h.1l.1-.1 4.7 4.5V29H17v9.2zm-9.8 10.5H5.3v6h.8v2.4h3.7v-2.5h2.9v-5.7c-.4 0-.6-.1-.8-.2zm17.4-.1c-.2.1-.7.4-1.4.4s-1.1-.2-1.4-.3c-.2.1-.7.3-1.4.3s-1.2-.2-1.5-.4c-.2.2-.8.4-1.8.4s-1.5-.2-1.8-.4c-.3.1-.8.4-1.5.4s-1.2-.2-1.4-.3c-.2.1-.7.3-1.4.3s-1.2-.3-1.4-.4c-.2.1-.7.2-1.2.3v5.7h2.1v2.4H19v-2.3h5.6v2.3h3.7v-2.4h2.1v-5.7c-.4 0-.9-.2-1.1-.3zm7-5.2h-9l4.9 4.8h6.5c.3-.3.6-.8.6-1.5.1-2-2.1-3-3-3.3zM31 44.4v5.7h2.9v2.5h3.7v-2.4h.9v-6h-6.6c-.3.1-.5.2-.9.2z" fill="#E20613" stroke="#FFF" stroke-width=".058"></path><path d="M38.3 50.9v2.4h-5.1v-2.5h-4.1v2.4h-5.2V51h-4.2v2.3h-5.2v-2.4h-4.1v2.5h-5V51H1.2v5.9c0 1.7.7 3.5 3.4 4.2 2.7.7 12.6 3 14.4 3.5 2.4.6 2.9 2.5 2.9 2.5s.5-1.9 2.9-2.5c1.8-.4 11.8-2.8 14.4-3.5 2.7-.7 3.4-2.5 3.4-4.2V51h-4.3zM18 25.6v1.3h.9v-1.4h2.4v1.4h1.1v-1.4h2.4v1.4h.9v-1.3h.4l-4.2-3.3-4.3 3.3z" fill="#E20613" stroke="#FFF" stroke-width=".058"></path><path d="M21.9 22.1c.2 0 .4-.2.4-.4s-.2-.4-.4-.4-.4.2-.4.4.1.4.4.4m.7-2.2s-.2.1-.3.1h-.1v-.2c0-.1.1-.3.1-.3l.1-.2-.2.1s-.2.1-.3.1c-.1 0-.3-.1-.3-.1l-.2-.1.1.2s.1.2.1.3v.2h-.1c-.1 0-.3-.1-.3-.1h-.1v1l.1-.1s.1-.1.2-.1h.1v.1c0 .1-.1.4-.1.4v.1c.1-.1.3-.2.5-.2s.4.1.5.2v-.1s-.1-.3-.1-.4v-.1h.1c.1 0 .2.1.2.1l.1.1v-1h-.1zM9.3 27c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5m.3 1.3h-.5v1.6h.5v-1.6zM34.4 27c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5m.2 1.3h-.4v1.6h.4v-1.6zM42.2 0v.6h-1V0h-1.4v.6h-1V0h-1.5v1.7h.7v2.7h-1.1V6h-2.1V4.4h-1.1V1.7h.7V0h-1.5v.6h-1V0h-1.4v.6h-1.1V0H28v1.7h.7v2.7h-1.1V6h-2.1V4.4h-1.1V1.7h.6V0h-1.4v.6h-1V0h-1.5v.6h-1V0h-1.4v1.7h.6v2.7h-1.1V6h-2.1V4.4h-1V1.7h.6V0h-1.4v.6h-1V0h-1.5v.6h-1V0H9.3v1.7h.7v2.7H8.9V6H6.8V4.4H5.7V1.7h.7V0H4.9v.6h-1V0H2.5v.6h-1V0H0v1.7h.7v4.4l2.5 2.7v4.3H2v4.4h39.8v-4.4h-1.3V8.8L43 6.1V1.7h.7V0h-1.5z" fill="#E20613"></path><path d="M27.2 34.8h8.7v3.5h-8.7zm0-4.6v4.1h10.6l-3-4.1zm-10.7 0H8.9l-3 4.1h10.6zm-8.7 4.6h8.7v3.5H7.8z" fill="#E20613" stroke="#FFF" stroke-width=".058"></path><path d="M16.4 48.8h-1.6v-2.3c.2-.8 1.3-.8 1.6 0v2.3zm6.4 0h-2v-2.5c.3-1 1.7-1 2 0v2.5zm-3.2 0h-2v-2.5c.3-1 1.7-1 2 0v2.5zm7.7 0h1.6v-2.3c-.2-.8-1.3-.8-1.6 0v2.3zm-3.2 0h2v-2.5c-.3-1-1.7-1-2 0v2.5z" fill="#FFF"></path><path d="M7.4 47.4H6.3v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0H8.5v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm21.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zM10.5 37.3H9.4V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm15 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0H31V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm-14.1-5.9h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3z" fill="#FFF" stroke="#FFF" stroke-width=".058"></path><path d="M14.9 43.8c.2.1.5.2.9.2.8 0 1.2-.3 1.2-.3h.1l3.9-8.4-6.1 8.5zm2.8 0c.2.1.5.1 1 .1.7 0 1.2-.3 1.3-.4l1.5-8.6-3.8 8.9c-.1 0-.1 0 0 0zm2.9 0c.2.1.6.2 1.3.2.8 0 1.2-.1 1.4-.2l-1.4-8.9-1.3 8.9c-.1 0-.1 0 0 0zm-8.5-.1c.2.1.4.2.7.2.5 0 1.1-.2 1.4-.3h.1l5.9-8-8.1 8.1zm16.7.1l-6.1-8.6 3.9 8.4h.1s.4.3 1.2.3c.3.1.6 0 .9-.1zm-2.8 0c.1 0 .1 0 0 0L22.2 35l1.5 8.6c.1.1.6.4 1.3.4.5 0 .8-.1 1-.2zm5.6-.1l-8.2-8.2 5.9 8h.1c.3.1.9.3 1.4.3.4.1.6 0 .8-.1z" fill="#E20613" stroke="#FFF" stroke-width=".058"></path><path d="M22.8 33l-.9 1-1-1 1-1 .9 1z" fill="#FFF"></path><path d="M16.1 28.5h11.5v-2.4h-1.4v1.3h-2V26H23v1.4h-2.3V26h-1.2v1.4h-2v-1.3h-1.4v2.4z" fill="#E20613"></path><path d="M42.5 17.5H1.2v39.3c0 1.7.7 3.5 3.4 4.2 2.7.7 12.6 3 14.4 3.5 2.4.6 2.9 2.5 2.9 2.5s.5-1.9 2.9-2.5c1.8-.4 11.8-2.8 14.4-3.5 2.7-.7 3.4-2.5 3.4-4.2-.1-1.8-.1-1.8-.1-39.3z" fill="none" stroke="#1D1D1B" stroke-width=".132"></path></svg></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-top hidden-sm hidden-print" id="search">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-sm-12">
+                <div class="search" itemscope itemtype="http://schema.org/WebSite">
+    <meta itemprop="url" content="https://arsredovisning.helsingborg.se">
+
+    <form method="get" action="https://arsredovisning.helsingborg.se/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://arsredovisning.helsingborg.se/?s={search_term_string}">
+
+                    <label for="searchkeyword-1" class="sr-only">Sök</label>
+        
+        <div class="input-group input-group-lg">
+            <input itemprop="query-input" required id="searchkeyword-1" autocomplete="off" class="form-control form-control-lg" type="search" name="s" placeholder="Sök efter" value="">
+            <span class="input-group-addon-btn">
+                <input type="submit" class="btn btn-primary btn-lg" value="Sök">
+            </span>
+        </div>
+    </form>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container hidden-print">
+    <div class="grid grid-table grid-va-middle">
+        <div class="grid-auto text-center-xs text-center-sm">
+            <div class="grid grid-table grid-va-middle no-padding">
+                <div class="grid-xs-8 grid-sm-8 grid-md-12 text-left-sm text-left-xs">
+                    <a href="../index.html" class="logotype" ><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 239.4 66.9"><style>.st0,.st1{fill:#FFF}.st1{stroke:#FFF;stroke-width:5.75600e-2}.st2{fill:none;stroke:#FFF;stroke-width:.2}</style><g id="Layer_1_1_"><g id="XMLID_2_"><g id="XMLID_54_"><path class="st0" d="M74.5 41.4v-7.2h-8.3v7.2h-2.6V24.9h2.6v7h8.3v-7h2.7v16.5h-2.7z" id="XMLID_72_"></path><path class="st0" d="M83.3 41.4V24.9h8.8l-.8 2.3h-5.4v4.7h5.4v2.2h-5.4v5.1h6.3v2.2h-8.9z" id="XMLID_71_"></path><path class="st0" d="M97.6 41.4V24.9h2.6v14.3h6.1v2.2h-8.7z" id="XMLID_70_"></path><path class="st0" d="M114.9 41.7c-2.3 0-3.8-.8-4.9-1.4l1.1-2c.8.6 2.1 1.2 3.7 1.2 1.3 0 2.9-.6 2.9-2.1 0-2.5-4-3-6-5.3-.7-.8-1.1-1.7-1.1-2.9 0-2.4 1.9-4.4 5.2-4.4 1.8 0 3.1.5 3.9.9v2.5c-1.1-.7-2.4-1.1-3.8-1.1s-2.6.6-2.6 1.9c0 3.3 7.2 3.2 7.2 8.2 0 2.7-2.5 4.5-5.6 4.5z" id="XMLID_69_"></path><path class="st0" d="M125.7 41.4V24.9h2.7v16.5h-2.7z" id="XMLID_68_"></path><path class="st0" d="M146.5 41.4l-7.8-10.1c-.8-1-1.2-1.7-1.6-2.4v12.6h-2.6V24.9h2.7l7.5 9.8c.9 1.2 1.4 1.8 1.7 2.5V25h2.6v16.5l-2.5-.1z" id="XMLID_67_"></path><path class="st0" d="M162.1 41.7c-5 0-8.3-3.5-8.3-8.3 0-5 3.6-8.6 9-8.6 2.1 0 3.7.5 4.8.9v2.5c-1.2-.6-2.8-1.2-4.6-1.2-4.3 0-6.3 2.7-6.3 6.1 0 3.7 2.3 6.3 6.1 6.3 1.2 0 2.2-.2 2.8-.6v-5.7h2.6v7c-1.4.8-3.6 1.6-6.1 1.6z" id="XMLID_66_"></path><path class="st0" d="M178.9 34.2h-2.2v5h2.1c2.1 0 3.2-1 3.2-2.6 0-1.4-1.2-2.4-3.1-2.4zm-2.2-7v4.7h1.9c1.2 0 2.4-.9 2.4-2.4 0-1.4-.8-2.3-2.6-2.3h-1.7zm2.2 14.2H174V24.9h5c3.2 0 4.6 2.1 4.6 4.1 0 1.5-.7 2.9-2.1 3.5 1.7.4 3.2 2 3.2 4 0 2.3-1.5 4.9-5.8 4.9z" id="XMLID_62_"></path><path class="st0" d="M196.9 27.1c-3.3 0-5.6 2.4-5.6 6.2s2.2 6.2 5.6 6.2c3.3 0 5.5-2.4 5.5-6.2.1-3.7-2-6.2-5.5-6.2zm-5.9.1c1.5-1.5 3.6-2.4 6-2.4 2.6 0 4.8 1 6.3 2.6 1.4 1.5 2.1 3.5 2.1 5.9 0 2.5-.8 4.7-2.4 6.2-1.5 1.5-3.5 2.3-6 2.3-2.3 0-4.3-.7-5.7-2-1.7-1.5-2.6-3.8-2.6-6.3-.1-2.6.8-4.8 2.3-6.3z" id="XMLID_59_"></path><path class="st0" d="M214.2 27.2h-1.5v5.5h1.6c1.7 0 3-1.3 3-2.9-.1-1.4-.9-2.6-3.1-2.6zm4.6 14.2c-2.6-4.3-3.9-6.5-4.5-6.7h-1.5v6.7h-2.6V24.9h4.1c4.1 0 5.7 2.1 5.7 4.6 0 2.3-1.5 3.7-3.1 4.4.7.3 2.4 3.3 5 7.5h-3.1z" id="XMLID_56_"></path><path class="st0" d="M233.3 41.7c-5 0-8.3-3.5-8.3-8.3 0-5 3.6-8.6 9-8.6 2.1 0 3.7.5 4.8.9v2.5c-1.2-.6-2.8-1.2-4.6-1.2-4.3 0-6.3 2.7-6.3 6.1 0 3.7 2.3 6.3 6.1 6.3 1.2 0 2.2-.2 2.8-.6v-5.7h2.6v7c-1.3.8-3.5 1.6-6.1 1.6z" id="XMLID_55_"></path></g></g><path class="st1" d="M16.3 38.9H7.4c-.9.3-3 1.4-3 3.4 0 .7.3 1.2.6 1.4h6.5l4.8-4.8zm19.9 0h-8.9l4.9 4.8h6.5c.3-.3.6-.8.6-1.4 0-2.1-2.2-3.1-3.1-3.4zm2 12v2.4h-5.1v-2.4h-4v2.4h-5.2v-2.2h-4.2v2.2h-5.2v-2.4h-4v2.4H5.4v-2.4H1.2v5.8c0 1.7.7 3.5 3.4 4.1 2.7.7 12.6 3 14.4 3.4 2.4.6 2.9 2.5 2.9 2.5s.5-1.9 2.9-2.5c1.8-.4 11.7-2.8 14.4-3.4 2.7-.7 3.4-2.5 3.4-4.1v-5.8h-4.4zM18 25.7V27h.9v-1.5h2.3V27h1.2v-1.5h2.3V27h.9v-1.3h.5l-4.3-3.4-4.3 3.4h.5z"></path><path class="st0" d="M21.8 22.2c.2 0 .4-.2.4-.4s-.2-.4-.4-.4-.4.2-.4.4.2.4.4.4m.7-2.2s-.2.1-.3.1h-.1v-.2c0-.1.1-.3.1-.3l.1-.2-.2.1s-.2.1-.3.1c-.1 0-.3-.1-.3-.1l-.2-.1.1.2s.1.2.1.3v.2h-.1c-.1 0-.3-.1-.3-.1H21v1l.1-.1s.1-.1.2-.1h.1v.1c0 .1-.1.4-.1.4v.1c.1-.1.3-.2.5-.2s.4.1.5.2v-.1s-.1-.3-.1-.4v-.1h.1c.1 0 .2.1.2.1l.1.1v-1h-.1zM9.3 27.1c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5m.2 1.2H9v1.6h.5v-1.6zm24.8-1.2c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5m.2 1.2h-.4v1.6h.4v-1.6zM42.1.1v.7h-1V.1h-1.4v.7h-1V.1h-1.5v1.7h.7v2.7h-1.1v1.6h-2.1V4.5h-1.1V1.8h.7V.1h-1.5v.7h-1V.1h-1.4v.7h-1V.1h-1.5v1.7h.7v2.7h-1.1v1.6h-2.1V4.5h-1.1V1.8h.7V.1h-1.5v.7h-1V.1h-1.4v.7h-1V.1h-1.5v1.7h.7v2.7h-1.1v1.6h-2.1V4.5H15V1.8h.7V.1h-1.5v.7h-1V.1h-1.4v.7h-1V.1H9.3v1.7h.7v2.7H8.9v1.6H6.8V4.5H5.7V1.8h.7V.1H4.9v.7h-1V.1H2.5v.7h-1V.1H0v1.7h.7v4.4l2.5 2.7v4.3H1.9v4.4h39.7v-4.4h-1.2V8.9l2.5-2.7V1.8h.7V.1h-1.5z"></path><path class="st1" d="M27.1 30.3v4h10.6l-3-4h-7.6zm-10.6 0H8.9l-3 4h10.6v-4zm12.7 13.8c-.2.1-.7.4-1.4.4s-1.1-.2-1.4-.3c-.2.1-.7.3-1.4.3s-1.2-.2-1.5-.4c-.2.2-.7.4-1.7.3-1 0-1.5-.2-1.7-.3-.3.1-.8.4-1.5.4s-1.2-.2-1.4-.3c-.2.1-.7.3-1.4.3s-1.2-.3-1.4-.4c-.2.1-.7.2-1.2.3v5.7h2.1v2.4H19v-2.2h5.6v2.2h3.7v-2.4h2.1v-5.7c-.5 0-1-.2-1.2-.3zm-12.8 4.6h-1.6v-2.3c.2-.8 1.3-.8 1.6 0v2.3zm3.1 0h-2v-2.5c.3-.9 1.6-.9 2 0v2.5zm3.3 0h-2v-2.5c.3-.9 1.6-.9 2 0v2.5zm3.2 0h-2v-2.5c.3-.9 1.6-.9 2 0v2.5zm2.8 0h-1.6v-2.3c.2-.8 1.3-.8 1.6 0v2.3zm-17-4.5H5.2v6H6v2.4h3.7v-2.4h2.9v-5.7c-.3-.1-.6-.2-.8-.3zm-4.4 3.2H6.3v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.1 0H8.4v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm20-3.2c-.2.1-.5.2-.8.2v5.7h2.9v2.4h3.7v-2.4h.9v-6l-6.7.1zm1.2 3.2h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0H34v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zM7.8 34.9v3.5h8.7v-3.5H7.8zm2.7 2.4H9.4V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm12.2-2.4v3.5h8.7v-3.5h-8.7zm2.7 2.4h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1V36c.2-.5.9-.5 1.1 0v1.3zm-19.3 6.5c.2.1.5.2.9.2.8 0 1.2-.3 1.2-.3h.1l3.9-8.4-6.1 8.5zm2.7 0c.2.1.5.1 1 .1.7 0 1.2-.3 1.3-.4l1.5-8.6-3.8 8.9zm2.9 0c.2.1.6.2 1.3.2.8 0 1.2-.1 1.4-.2l-1.4-8.9-1.3 8.9c-.1 0 0 0 0 0zm-8.4-.1c.2.1.4.2.7.2.5 0 1.1-.2 1.4-.3h.1l5.9-8-8.1 8.1zm16.6.1l-6.1-8.5 3.9 8.4h.1s.4.3 1.2.3c.4 0 .7-.1.9-.2zm-2.7 0L22.2 35l1.5 8.6c.1.1.6.4 1.3.4.4 0 .8-.1 1-.2zm5.5-.1l-8.2-8.1 5.9 8h.1c.3.1.9.3 1.4.3.4 0 .6-.1.8-.2z"></path><path class="st1" d="M17 29.1v9.1l4.5-4.4-.7-.7 1-1 1 1-.7.7 4.5 4.4v-9.1H17zm3.2 2.3h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.1 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3zm2.2 0h-1.1v-1.3c.2-.5.9-.5 1.1 0v1.3z"></path><path class="st0" d="M16.1 28.5h11.4v-2.3h-1.4v1.3h-1.9v-1.4h-1.3v1.4h-2.2v-1.4h-1.3v1.4h-2v-1.3h-1.3v2.3z"></path><path class="st2" d="M42.4 17.6H1.2v39.2c0 1.7.7 3.5 3.4 4.1 2.7.7 12.6 3 14.4 3.4 2.4.6 2.9 2.5 2.9 2.5s.5-1.9 2.9-2.5c1.8-.4 11.7-2.8 14.4-3.4 2.7-.7 3.4-2.5 3.4-4.1-.2-1.8-.2-1.8-.2-39.2z"></path></g></svg></a>
+                </div>
+
+                                    <div class="grid-xs-4 grid-sm-4 text-right-sm text-right-xs hidden-md hidden-lg">
+                        <a href="#mobile-menu" class=" menu-trigger" data-target="#mobile-menu"><span class="menu-icon"></span> Meny</a>
+                    </div>
+                            </div>
+        </div>
+
+                <div class="grid-auto text-center hidden-xs hidden-sm hidden-md">
+            <span class="sub-site-title"><strong>Årsredovisning</strong> 2016</span>
+        </div>
+        
+                <div class="grid-auto text-center-sm text-center-xs text-right hidden-xs hidden-sm">
+
+                        <div>
+                
+
+                                    <form class="search top-search hidden-xs hidden-sm" method="get" action="https://arsredovisning.helsingborg.se/">
+    <label for="searchkeyword-2" class="sr-only">Sök</label>
+    <div class="input-group">
+        <input id="searchkeyword-2" autocomplete="off" class="form-control" type="search" name="s" placeholder="Sök efter" value="">
+        <span class="input-group-addon-btn">
+            <input type="submit" class="btn btn-primary" value="Sök">
+        </span>
+    </div>
+</form>
+                            </div>
+            
+                    </div>
+            </div>
+</div>
+
+    <span class="sub-site-title-block hidden-lg hidden-xl"><strong>Årsredovisning</strong> 2016</span>
+
+    <nav class="navbar navbar-mainmenu hidden-xs hidden-sm hidden-print  ">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-sm-12">
+                    <ul id="" class="nav nav-left hidden-xs hidden-sm nav-has-sublevel"><li class="page-193"><a href="../index.html">Startsida</a></li><li class="has-sub-menu page-19"><a href="../forvaltningsberattelse/index.html">Förvaltningsberättelse</a><button data-load-submenu="19"><span class="sr-only">Show submenu</span><span class="icon"></span></button></li><li class="has-sub-menu page-93"><a href="../ekonomisk-redovisning/index.html">Ekonomisk redovisning</a><button data-load-submenu="93"><span class="sr-only">Show submenu</span><span class="icon"></span></button></li><li class="current current-menu-item page-112"><a href="index.html">Kontakta oss</a></li><li class="page-111"><a href="../ordlista/index.html">Ordlista</a></li><li class="page-5208"><a href="../rattelser/index.html">Rättelser</a></li></ul><ul id="" class="nav nav-left hidden-xs hidden-sm nav-sublevel"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+            <nav id="mobile-menu" class="nav-mobile-menu nav-toggle nav-toggle-expand hidden-md hidden-lg hidden-print">
+            <form class="search" method="get" action="https://arsredovisning.helsingborg.se/">
+    <label for="searchkeyword-mobile" class="sr-only">Sök</label>
+
+    <div class="input-group">
+        <input id="searchkeyword-mobile" autocomplete="off" class="form-control" type="search" name="s" placeholder="Sök efter" value="">
+        <span class="input-group-addon-btn">
+            <input type="submit" class="btn btn-primary" value="Sök">
+        </span>
+    </div>
+</form>
+
+<ul class="nav-mobile"><ul id="" class="nav"><li class="page-193"><a href="../index.html">Startsida</a></li><li class="has-sub-menu page-19"><a href="../forvaltningsberattelse/index.html">Förvaltningsberättelse</a><button data-load-submenu="19"><span class="sr-only">Show submenu</span><span class="icon"></span></button></li><li class="has-sub-menu page-93"><a href="../ekonomisk-redovisning/index.html">Ekonomisk redovisning</a><button data-load-submenu="93"><span class="sr-only">Show submenu</span><span class="icon"></span></button></li><li class="current current-menu-item page-112"><a href="index.html">Kontakta oss</a></li><li class="page-111"><a href="../ordlista/index.html">Ordlista</a></li><li class="page-5208"><a href="../rattelser/index.html">Rättelser</a></li></ul></ul>
+
+
+        </nav>
+    </header>
+
+
+
+        <main id="main-content" class="clearfix main-content">
+            
+<div class="container main-container">
+
+    <div class="grid breadcrumbs-wrapper">
+    <div class="grid-lg-12">
+        <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="../index.html" title="Hem">
+                            <span itemprop="name">Hem</span><meta itemprop="position" content="1"></a>
+                        </li>
+<li itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                                    <span itemprop="name" class="breadcrumbs-current">Kontakta oss</span>
+                                    <meta itemprop="position" content="1" />
+                                </li></ol>
+    </div>
+</div>
+
+    <div class="grid ">
+        
+        <div class="grid-xs-12 grid-print-12" id="readspeaker-read">
+
+            
+                            
+
+                <article class="clearfix">
+    <h1>Kontakta oss</h1>
+
+    <ul class="nav nav-help nav-accessibility nav-horizontal hidden-print rs_skip rs_preserve">
+			<li>
+        	<div class="rsbtn rs_skip rs_preserve"><a id="readspeaker-play-button" href="http://app-eu.readspeaker.com/cgi-bin/rsent?customerid=5507&amp;lang=sv_SE&amp;readid=readspeaker-read&amp;url=https://arsredovisning.helsingborg.se/kontakta-oss" class="readspeaker-play-button">Lyssna</a></div>
+    	</li>
+    			<li>
+			<a href="#" onclick="window.print();return false;" class=""><i class="pricon pricon-print"></i> Skriv ut</a>
+		</li>
+	</ul>
+
+
+    
+                    <p><strong>Helsingborg kontaktcenter<br />
+</strong>Telefon:  042-10 50 00</p>
+<p><strong>Öppettider:</strong><br />
+Måndag–torsdag 07:00 –19:00<br />
+Fredag 07:00 –17:00<br />
+Lördag 10:00 –15:00</p>
+<p><strong>Besöksadress: </strong>Stortorget 17<br />
+<strong>Skicka brev: </strong>Namn på verksamheten, 251 89 Helsingborg<br />
+<strong>E-post: </strong><a href="mailto:kontaktcenter@helsingborg.se">kontaktcenter@helsingborg.se</a></p>
+<p><strong>Stadens webbplats: </strong><a href="http://helsingborg.se/">helsingborg.se</a><br />
+<strong>Chatta: </strong>Behöver du hjälp att hitta kontaktuppgifter till en särskild verksamhet eller person?<br />
+Då kan du chatta med Helsingborg kontaktcenter.</p><p><strong>Sociala medier:</strong><br />
+<a href="http://facebook.com/helsingborgsstad">facebook.com/helsingborgsstad</a><br />
+<a href="http://twitter.com/hbgstad">twitter.com/hbgstad</a><br />
+<a href="http://youtube.com/helsingborgstad">youtube.com/helsingborgstad</a><br />
+<a href="http://instagram.com/helsingborgsstad">instagram.com/helsingborgsstad</a></p>
+
+        
+    
+</article>
+            
+            
+            <div class="hidden-xs hidden-sm hidden-md hidden-print">
+                <footer class="page-footer">
+    
+    <div class="grid">
+        <div class="grid-xs-12">
+            <ul class="article-timestamps">
+    
+    
+            
+            
+    </ul>
+        </div>
+    </div>
+</footer>
+            </div>
+        </div>
+
+
+            </div>
+
+    <div class="grid hidden-lg hidden-xl">
+        <div class="grid-sm-12">
+            <footer class="page-footer">
+    
+    <div class="grid">
+        <div class="grid-xs-12">
+            <ul class="article-timestamps">
+    
+    
+            
+            
+    </ul>
+        </div>
+    </div>
+</footer>
+        </div>
+    </div>
+</div>
+
+
+                    </main>
+
+        <footer class="main-footer hidden-print ">
+    <div class="container">
+
+        
+        <div class="grid">
+            <div class="grid-md-12">
+
+                
+                                <div class="grid">
+                    <div class="grid-md-12">
+                        
+                        <nav class="pull-right">
+                            <ul class="nav nav-help nav-horizontal">
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                                
+
+                
+                <div class="grid sidebar-footer-area">
+                                            <div class="grid-lg-4"><div class="widget_editor"><h4>Stadsledningsförvaltningen</h4>
+<p>Avdelningen för ekonomi och styrning</p>
+</div></div><div class="grid-lg-4"><div class="widget_editor"><p>Helsingborgs stads årsredovisning 2016 är antagen i Kommunfullmäktige 2017-04-25 </p>
+</div></div><div class="grid-lg-4"><div class="widget_editor"><p><a href="../wp-content/uploads/sites/18/2017/04/helsingborgs_stads_arsredovisning_2016.html" target="_blank">Ladda hem pdf-version</a></p>
+</div></div>                                    </div>
+                
+
+                
+                                
+            </div>
+
+            
+                    </div>
+    </div>
+
+    
+    </footer>
+
+        
+             </div>
+
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var MunicipioLang = {"printbreak":{"tooltip":"Infoga sidbrytning f\u00f6r utskrift"}};
+var likeButtonData = {"ajax_url":"https:\/\/arsredovisning.helsingborg.se\/wp\/wp-admin\/admin-ajax.php","nonce":"220ab04d93"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/municipio/assets/dist/js/packaged.min.js' defer='defer'></script>
+<script type='text/javascript' src='../wp/wp-includes/js/comment-reply.min.js' defer='defer'></script>
+<script>
+                        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+                        ga('create','UA-16679007-26','auto');ga('send','pageview')
+                    </script><script type='text/javascript' async defer src='../../www.google-analytics.com/analytics8a54.js?ver=1.0.0' defer='defer'></script>
+<script type='text/javascript' src='../wp/wp-includes/js/wp-embed.min.js' defer='defer'></script>
+<!-- Title diw: "Kontakta oss | " : "|" : "right" -->
+<script>var classname = document.getElementsByClassName("backlink");
+
+var goBack = function() {
+    window.history.back();
+};
+
+for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', goBack, false);
+}
+
+
+var linkList = document.querySelectorAll('.modularity-mod-image a');
+for(var i in linkList){
+ linkList[i].setAttribute('target', '_blank');
+}</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"363e987a0a","applicationID":"82442269","transactionName":"ZAdaNRZVWEQDAEFaXl1NbRMNG19ZBgZNHUFbEg==","queueTime":0,"applicationTime":547,"atts":"SEBZQ15PS0o=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from arsredovisning.helsingborg.se/kontakta-oss/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Dec 2017 07:59:19 GMT -->
+</html>
